@@ -1,0 +1,311 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Bree+Serif);
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@keyframes shoot {
+    from {
+      transform: translateX(4.1rem)translateY(-7.9rem)rotate(-45deg);
+    }
+    to {
+      transform: translateX(2000%)translateY(-2000%)rotate(-45deg);
+    }
+  }
+
+  
+  @media only screen and (min-width: 900px) {
+    .image-container {
+        position: relative;
+        width:50rem;
+      }
+    
+      @keyframes shoot {
+        from {
+          transform: translateX(4.1rem)translateY(-8.4rem)rotate(-45deg);
+        }
+        to {
+          transform: translateX(6000%)translateY(-6000%)rotate(-45deg);
+        }
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .image-container {
+        position: relative;
+        width:50rem;
+      }
+    
+      @keyframes shoot {
+        from {
+          transform: translateX(4.1rem)translateY(-6.4rem)rotate(-45deg);
+        }
+        to {
+          transform: translateX(6000%)translateY(-6000%)rotate(-45deg);
+        }
+    }
+  }
+
+  button {
+    margin-top: 0;
+    background-color: transparent;
+    padding: 0.5rem;
+    border: solid black 2px;
+    border-radius: 10%;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;    
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.outline-button{
+    text-decoration: none;
+    font-family:lato, Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.25rem;
+    border: 1px solid white;
+}
+
+.lilac{
+    border: 2px solid black;
+    border-radius: 5%;
+    color:black;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+}
+/* header component */
+
+header{
+    display: flex;
+    background-color: #76d1f6;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 1.5rem;
+}
+
+#headerdiv{
+    position: relative;
+    text-align: center;
+}
+
+#brand {
+    position: relative;
+    text-align: center;
+    width: 20%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid black;
+}
+
+nav {
+    display:flex;
+    background-color: #76d1f6;
+    justify-content: space-around;
+    width:100%;
+}
+
+nav a {
+    font-family: 'Press Start 2P', cursive;    text-decoration: none;
+    font-size: 0.7rem;
+    color:black;
+}
+
+/* hero component */
+
+#hero {
+    display:flex;
+    flex-direction: column;
+    background:black url(docs/header.jpg) 33% no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+#hero h1, #hero a {
+    color: black;
+    padding: 2.5rem;
+}
+
+#hero h1 {
+    font-family: 'Press Start 2P', cursive;    
+    font-size: 1.3rem;
+    font-weight: normal;
+    align-items: center;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+    z-index: 3;
+}
+
+
+#hero img{
+    width: 50%;
+    border-radius:20%;
+    border: black solid 5px;
+}
+
+
+/* Main Content */
+
+main {
+    margin: 0;
+    padding: 1rem;
+    font-family: "montserrat", sans-serif;
+    box-sizing: border-box;
+    min-height: 10vh;
+    background: linear-gradient(to bottom, #a2d228, rgb(14, 117, 0), rgb(59, 44, 0));
+}
+
+main section div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+}
+main section div img{
+    border-radius: 5%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+    width:25%
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    width:100%
+}
+
+main h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+main p {
+    padding-bottom: 3rem;
+}
+
+
+/* Social links component */
+#social-links {
+    background: linear-gradient(to bottom, rgb(59, 44, 0), black);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'bree-serif','Times New Roman', times, serif;
+    padding: 1rem;
+}
+
+#social-links p{
+    font-family:'bree-serif','Times New Roman', times, serif;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+#social-links > div{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+}
+/* Footer component */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: black;
+}
+
+footer p{
+    font-family:'bree-serif','Times New Roman', times, serif;
+    font-size: 1.25rem;
+    color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+    
+    /* Desktop Nav */
+    
+    header{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #76d1f6;
+        padding: 0.2vh 1.5rem 0vh 1rem;
+    }
+    #headerdiv{
+        position: relative;
+        text-align: start;
+        margin-top: 1rem;
+    }
+    
+    nav {
+        display:flex;
+        background-color: #76d1f6;
+        justify-content: space-around;
+        width:100%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    nav a {
+        font-family: 'Press Start 2P', cursive;    
+        text-decoration: none;
+        font-size: 1rem;
+        margin-left: 8rem;
+        color:black;
+    }
+    
+    
+    /* Desktop Hero */
+    
+    #hero {
+        display:flex;
+        flex-direction: column;
+        background:black url(docs/header.jpg) 100% no-repeat;
+        background-position: top;
+        background-size: cover;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    #hero img{
+        width: 25%;
+        border-radius:20%;
+        border: black solid 5px;
+    }
+    button {
+        margin-top: 0;
+        background-color: transparent;
+        padding: 0.5rem;
+        border: solid black 2px;
+        border-radius: 10%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        font-family: 'Press Start 2P', cursive;    
+      }
+      #hero h1 {
+        font-family: 'Press Start 2P', cursive;    
+        font-size: 2.5rem;
+        font-weight: normal;
+        align-items: center;
+        margin-bottom: 4rem;
+        margin-top: 1rem;
+        z-index:3;
+    }
+
+    
+    /* Desktop Main */
+    main {
+        display: flex;
+  flex-wrap: nowrap; 
+  flex-direction: column;
+  font-family:'bree-serif','Times New Roman', times, serif;
+  background: linear-gradient(to bottom, #a2d228, rgb(14, 117, 0), rgb(59, 44, 0));
+  justify-content: space-between; 
+  padding-bottom: 20vh;
+    }
+    
+}
