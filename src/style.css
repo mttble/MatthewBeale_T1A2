@@ -1,0 +1,97 @@
+/* Mobile */
+article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  article > * {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: black;
+  }
+  
+  nav {
+    background-color: #5995DA;
+    height: 80px;
+  }
+  /* Header */
+  header {
+    background-color: #B2D6FF;
+  }
+  p {
+    display: flex;
+    position: absolute;
+  }
+  #arty {
+    display: flex;
+    scale: 40%;
+    position: relative;
+    transform: translateX(-20em);
+  }
+  
+  main {
+    background-color: #EAEDF0;
+    height: 600px;
+  }
+  
+  #sign-up {
+    background-color: #D6E9FE;
+  }
+  
+  #feature-1 {
+    background-color: #F5CF8E;
+  }
+  
+  #feature-2 {
+    background-color: #F09A9D;
+  }
+  
+  #feature-3 {
+    background-color: #C8C6FA;
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 601px) and (max-width:960px){
+    body > article > section {
+      width: 50%;
+      height: 50vw;
+    }
+  }
+  
+  /* Dekstop */
+  @media only screen and (min-width: 961px) {
+    section[id^="feature-"] {
+      flex: 1;
+      height: 40vw;
+    }
+    header {
+      height: 30vh;
+    }
+    #sign-up {
+      height: 150px;
+      order: 2;
+    }
+    main {
+      order: 3;
+    }
+    #feature-2 {
+      order: 1;
+    }
+
+
+
+    
+
+
+
+
+
+
+
+
+  }
