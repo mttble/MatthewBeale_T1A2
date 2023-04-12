@@ -221,9 +221,133 @@ main p {
     padding-bottom: 0;
 }
 
-div{
-    padding-left: 2rem;
-    padding-right: 2rem;
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    height: 200px;
+}
+.img1{
+    height: 100%;
+    width: 100%;
+    background-image: url(docs/canyon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.35);
+    margin-right: 10px;
+}
+.img2{
+    height: 100%;
+    width: 100%;
+    background-image: url(docs/tower.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    perspective: 200px;
+    transition: 1s;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.35);
+    margin-right: 10px;
+}
+.img3{
+    height: 100%;
+    width: 100%;
+    background-image: url(docs/bunjee.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.35);
+}
+
+.img1:hover .one{
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.one{
+    position: relative;
+    top: 0;
+    left: -700px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 86%;
+    width: 91%;
+    text-align: center;
+    padding: 20px;
+    transition: 1s;
+}
+.one h1{
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+.two{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    height: 86.2%;
+    width: 91%;
+    text-align: center;
+    padding: 20px;
+    transform-origin: top center;
+    opacity: 0;
+    transition: 1s;
+}
+.img2:hover .two{
+    opacity: 1;
+}
+
+.two h1{
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+.three h1{
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+.three{
+    position: relative;
+    top: 0;
+    left: 500px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 86%;
+    width: 91%;
+    text-align: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+.img3:hover .three{
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
 }
 
 /* Social links component */
@@ -259,6 +383,41 @@ footer p{
     font-size: 1.25rem;
     color: white;
 }
+/* image resize for tablet and desktop*/
+@media only screen and (min-width: 650px) {
+    .container1 {
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .container1 {
+        height: 400px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .container1 {
+        height: 400px;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .container1 {
+        height: 400px;
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    .container1 {
+        height: 400px;
+        padding-left: 25rem;
+        padding-right: 25rem;
+    }
+}
+
 
 @media only screen and (min-width: 1000px) {
     
