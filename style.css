@@ -149,17 +149,20 @@ nav a {
     border: black solid 5px;
 }
 #me{
-    opacity: 0;
-  animation: fade-in 4s forwards;
+    animation: bounce 3s infinite;
 }
-@keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+
+@keyframes bounce {
+  0% {
+    transform: translate(0px, 0px);
   }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+}
+}
 
 
 #cannon {
@@ -222,7 +225,13 @@ main article p{
 
 main img {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 20);
+    transition: transform 0.2s ease-in-out;
 }
+
+main img:hover {
+    transform: scale(1.05);
+}
+
 
 /* Social links component */
 #social-links {

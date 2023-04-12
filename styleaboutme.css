@@ -149,6 +149,21 @@ nav a {
     border-radius:20%;
     border: black solid 5px;
 }
+#me{
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+}
+}
 
 
 /* Main Content */
@@ -206,6 +221,10 @@ main p {
     padding-bottom: 0;
 }
 
+div{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
 /* Social links component */
 #social-links {
