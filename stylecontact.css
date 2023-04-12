@@ -150,13 +150,20 @@ nav a {
     border: black solid 5px;
 }
 
-#cannon {
-    display: flex;
-    position: absolute;
-    width: 30%;
-    display: flex;
-    transform:translateY(-120%);
-    z-index:2;
+#me{
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+}
 }
 
 
