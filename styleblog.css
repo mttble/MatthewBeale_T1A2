@@ -351,7 +351,8 @@ main {
         width: 100%; }
       .box-cards-blog.-grid .card .card-meta {
         margin-left: 0px;
-        margin-top: 1rem; } }
+        margin-top: 1rem; } 
+      }
 
 
 /* Social links component */
@@ -374,6 +375,10 @@ main {
     width: 100%;
     display:flex;
     justify-content: space-around;
+}
+#git img{
+  max-width: 50px; 
+  max-height: 50px
 }
 /* Footer component */
 footer {

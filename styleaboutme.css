@@ -382,6 +382,10 @@ main p {
     display:flex;
     justify-content: space-around;
 }
+#git img{
+    max-width: 50px; 
+    max-height: 50px
+}
 /* Footer component */
 footer {
     text-align: center;
