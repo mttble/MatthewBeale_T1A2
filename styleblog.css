@@ -209,6 +209,7 @@ main {
     display: flex;
     background-color: #fff;
     transition: box-shadow 0.3s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
     border-radius: 20px; }
     .card:hover {
       transition: box-shadow 0.3s ease;
@@ -327,6 +328,7 @@ main {
       max-height: calc(var(--max-lines) * 1em * var(--line-height));
       line-height: var(--line-height);
       position: relative;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .card-desc:has(+ .expand-btn:not(:checked)):before {
       content:"";
