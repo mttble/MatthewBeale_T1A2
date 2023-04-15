@@ -265,7 +265,7 @@ main p {
 .img1{
     height: 100%;
     width: 100%;
-    background-image: url(docs/canyon.png);
+    background-image: url(/docs/canyon.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -279,7 +279,7 @@ main p {
 .img2{
     height: 100%;
     width: 100%;
-    background-image: url(docs/tower.png);
+    background-image: url(/docs/tower.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -294,7 +294,7 @@ main p {
 .img3{
     height: 100%;
     width: 100%;
-    background-image: url(docs/bunjee.png);
+    background-image: url(/docs/bunjee.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
