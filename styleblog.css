@@ -319,6 +319,46 @@ main {
         background-color: #007AE9;
         color: #fff;
         border-color: #007AE9; }
+    
+    .card-desc {
+      --max-lines:3;
+      overflow: hidden;
+      --line-height:1.4;
+      max-height: calc(var(--max-lines) * 1em * var(--line-height));
+      line-height: var(--line-height);
+      position: relative;
+    }
+    .card-desc:has(+ .expand-btn:not(:checked)):before {
+      content:"";
+      position: absolute;
+      height: calc(1em * var(--line-height));
+      width: 100%;
+      bottom: 0;
+      pointer-events: none;
+      background: linear-gradient(to bottom, transparent,white);
+    }
+    .expand-btn {
+      display: absolute;
+      justify-content:right;
+      appearance: none;
+      border: 1px solid black;
+      padding: 0.5em;
+      border-radius: 0.25em;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .expand-btn:hover {
+      background-color: #CCC;
+    }
+    .expand-btn:before {
+      content: "Expand";
+    }
+    .expand-btn:checked::before {
+      content: "Collapse";
+    }
+    .card-desc:has(+.expand-btn:checked) {
+      max-height: none;
+    }
   
   /*Responsive*/
   @media (max-width: 991px) {
